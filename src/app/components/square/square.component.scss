@@ -1,0 +1,35 @@
+@import "../../scss/breakpoints";
+
+.square {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+
+  &--text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.75rem;
+    word-wrap: break-word;
+    hyphens: auto;
+
+    @include media-breakpoint-sm-up() {
+      -webkit-line-clamp: 2;
+      font-size: 0.875rem;
+    }
+
+    @include media-breakpoint-lg-up() {
+      -webkit-line-clamp: 4;
+      font-size: 1rem;
+    }
+
+    @include media-breakpoint-xl-up() {
+      -webkit-line-clamp: 5;
+      font-size: 1rem;
+    }
+  }
+}

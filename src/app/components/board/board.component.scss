@@ -1,0 +1,40 @@
+@import "../../scss/breakpoints";
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #fff;
+  background: #28465f;
+  margin-bottom: 24px;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 8px;
+  margin: 0 auto;
+
+  @include media-breakpoint-sm-up() {
+    padding: 0 16px;
+  }
+
+  @include media-breakpoint-md-up() {
+    padding: 0 24px;
+  }
+}
+
+app-square {
+  display: flex;
+  padding: 1px;
+  width: 10%;
+  aspect-ratio: 1/1;
+  border: 1px solid #fff;
+  align-items: center;
+
+  @include media-breakpoint-sm-up() {
+    padding: 4px;
+  }
+
+  @include media-breakpoint-md-up() {
+    padding: 8px;
+  }
+}

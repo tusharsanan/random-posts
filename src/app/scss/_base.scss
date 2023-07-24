@@ -1,0 +1,26 @@
+html {
+  font-size: 100%;
+  background: #edf0f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #28465f;
+  padding-bottom: 24px;
+}
+
+.generic_error {
+  color: #ff0000;
+  text-align: center;
+}
